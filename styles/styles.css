@@ -6,8 +6,22 @@
     --border-details: 1px solid;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main {
   max-width: 840px;
+}
+main img {
+  width: 150px;
+  height: var(--height);
+  border: var(--border-details) black;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+  float: right;
 }
 nav {
   background-color: var(--darkblue-color);
@@ -21,28 +35,35 @@ nav a {
 h1 {
   color: var(--darkblue-color);
 }
-main img {
-  width: 150px;
-  height: var(--height);
-  border: var(--border-details) black;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
-}
 p {
   padding: 0px;
 }
 aside {
-    width: 20rem;
+    width: 20em;
     margin: var(--1rem-size);
-    border: var(--border-details) rgb(0 0 0 / 0.2); 1️⃣
+    /* border: var(--border-details) rgb(0 0 0 / 0.2); 1️⃣ */
     padding: var(--1rem-size);
     background-color: #eee;
     color: #333;
     text-align: var(--alignment);
-}
-aside img{
+    position: relative;
+  }
+  aside img{
     width: 200px;
     height: var(--height);
+}
+aside h2 {
+  position: absolute;
+  top: 100px;
+  left: 53px;
+}
+/* Class Selectors */
+.box{
+  margin: var(--1rem-size);
+  border: var(--border-details) rgb(0 0 0 / 10%);
+  padding: var(--1rem-size);
+  background-color: #c5efff;
+  color: #000;
 }
 footer {
   margin-top: 15px;
