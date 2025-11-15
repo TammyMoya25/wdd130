@@ -48,7 +48,6 @@ h1 {
   background-color: var(--accent1-color);
   color: #fff; /* white text – make sure there is enough contrast with the background-color */
 }
-xample above uses the following CSS:
 .hero article img {
   float: right;
   width: 125px;
