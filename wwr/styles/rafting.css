@@ -30,7 +30,7 @@ nav, p, section, article {
 .socialmedia a {
     text-decoration: none;
 }
-.hero div{
+.hero{
   position: relative;
 }
 .hero img {
