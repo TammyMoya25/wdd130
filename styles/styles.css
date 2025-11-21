@@ -42,6 +42,7 @@ h1 {
 }
 p {
   padding: 0px;
+  margin: var(--1rem-size);
 }
 /* Class Selectors */
 .box{
