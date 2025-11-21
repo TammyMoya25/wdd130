@@ -19,6 +19,7 @@ main img {
   padding: 2px;
   box-shadow: 0 0 30px gray;
   float: right;
+  margin: var(--1rem-size);
 }
 nav {
   background-color: var(--darkblue-color);
@@ -37,7 +38,7 @@ nav a {
 }
 h1 {
   color: var(--darkblue-color);
-  border-bottom: 1px solid black;
+  border-bottom: var(--border-details) black;
 }
 p {
   padding: 0px;
