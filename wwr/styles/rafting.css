@@ -11,8 +11,8 @@
 }
 body {
   font-family: var(--body-font);
-  color: #000;
 }
+
 header, main, footer {
   width: 840px;
   margin: 0 auto;
@@ -92,6 +92,7 @@ header{
   align-items: center;
   background: var(--primary-color);
   padding: 1rem 2rem;
+  color: white;
 }
 header nav{
   display: flex;
