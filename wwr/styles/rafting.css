@@ -4,6 +4,7 @@
   --terciary-color: #000000
   --heading-font: "Trebuchet MS", Helvetica, sans-serif;
   --body-font: Arial, Helvetica, sans-serif;
+  --forth-color: rgba(0, 45, 82, 0.75);
 }
 
 * {
@@ -41,7 +42,7 @@ nav, p, section, article {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: var(--primary-color , 0.7);
+  background-color: var(--forth-color);
   color: var(--secondary-color);
   font-size: 2rem;
 }
@@ -50,7 +51,7 @@ nav, p, section, article {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background-color: var(--primary-color , 0.8);
+  background-color: var(--forth-color);
   color: var(--secondary-color);
   padding: 16px;
   font-size: 0.9rem;
