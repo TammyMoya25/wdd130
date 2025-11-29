@@ -2,6 +2,7 @@
   --primary-color: #0a2d52;  /* azul oscuro */
   --heading-font: "Trebuchet MS", Helvetica, sans-serif;
   --body-font: Arial, Helvetica, sans-serif;
+  --secondary-color: white;
 }
 
 * {
@@ -40,7 +41,7 @@ nav, p, section, article {
   padding: 16px;
   text-align: center;
   background-color: rgba(0, 45, 82, 0.75);
-  color: white;
+  color: var(--secondary-color);
   font-size: 2rem;
 }
 .hero article {
@@ -49,7 +50,7 @@ nav, p, section, article {
   left: 20px;
   right: 20px;
   background-color: rgba(0, 45, 82, 0.85);
-  color: white;
+  color: var(--secondary-color);
   padding: 16px;
   font-size: 0.9rem;
   display: flex;
@@ -60,11 +61,11 @@ nav, p, section, article {
   float: right;
   width: 125px;
   margin-left: 10px;
-  border: 2px solid white;
+  border: 2px solid var(--secondary-color);
 }
 section h2 {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
   text-align: center;
   padding: 12px;
   border-radius: 3px;
@@ -92,7 +93,7 @@ header{
   align-items: center;
   background: var(--primary-color);
   padding: 1rem 2rem;
-  color: white;
+  color: var(--secondary-color);
 }
 header nav{
   display: flex;
@@ -106,7 +107,7 @@ header img {
 header nav a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: var(--secondary-color);
   margin-left: 20px;
   line-height: 1.4rem;
   padding: 0.5rem 1rem;
@@ -161,7 +162,7 @@ figcaption {
 footer p {
   margin: 16px;
   padding: 8px;
-  color: white;
+  color: var(--secondary-color);
 }
 footer {
   display: flex;
@@ -169,7 +170,7 @@ footer {
   align-items: center;
   background: var(--primary-color);
   padding: 1rem 2rem;
-  color: white;
+  color: var(--secondary-color);
 }
 
 footer .social {
@@ -179,4 +180,144 @@ footer .social {
 
 footer .social img {
   width: 30px;
+}
+
+
+
+
+
+/* COMPANY INFO */
+.company-info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.company-info h1 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.company-info p {
+  line-height: 1.5rem;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+/* CONTACT SECTION (MAP + FORM) */
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 30px;
+  align-items: start;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #888;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 90px;
+}
+
+/* RADIO BUTTONS */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #09314e;
+}
+
+/* EMPLOYEES SECTION */
+.employees {
+  margin-top: 40px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 6px;
+  background: #f7f7f7;
+}
+
+.employees h2 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+/* EMPLOYEE GRID */
+.employee-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;   
+    gap: 40px;                                             
+    width: 80%;                              
+    margin: 0 auto;      
+}
+
+.employee {
+  width: 180px;   
+  text-align: center;
+}
+
+
+.employee img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.employee p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
 }
