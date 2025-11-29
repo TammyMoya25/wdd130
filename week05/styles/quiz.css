@@ -1,0 +1,112 @@
+form {
+    background: #f3f3f3;
+    padding: 25px;
+    border-radius: 8px;
+    width: 650px;
+    border: 1px solid #d6d6d6;
+}
+ody {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+
+    /* center the page content vertically stacked */
+    display: flex;
+    flex-direction: column;   /* stack children (h1 then form) */
+    align-items: center;      /* center children horizontally */
+    /* justify-content can be left as default or used to control vertical spacing */
+}
+
+h1 {
+    font-size: 28px;
+    color: #001a66;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+
+    /* center the contents of the h1 (text + icon) */
+    justify-content: center;
+    width: 100%;
+    max-width: 650px; /* keeps heading aligned with form width */
+    box-sizing: border-box;
+}
+
+/* Optional check icon look */
+h1::before {
+    content: "✔";
+    color: black;
+    font-size: 22px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+/* Numbering matches the style in the image */
+label::before {
+    counter-increment: question;
+    content: counter(question) ". ";
+    color: #000066;
+    font-weight: 700;
+}
+
+form {
+    counter-reset: question;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    background-color: white;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #001a66;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #000f44;
+}
+
+/* Code snippet box like the screenshot */
+.code-box {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    width: fit-content;
+    margin: 10px 0 20px 0;
+    display: block;
+}
