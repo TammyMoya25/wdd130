@@ -465,6 +465,10 @@ h2 {
   height: 180px;
   object-fit: cover;
 }
+h3{
+  color: white;
+  font-weight: normal;
+}
 .trip-card h3 {
   font-family: var(--heading-font);
   color: var(--primary-color);
