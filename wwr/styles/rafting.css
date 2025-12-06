@@ -378,6 +378,7 @@ button:hover {
   gap:16px;
   background:var(--primary-color);
   font-family:var(--body-font);
+  color: white;
 }
 .cta h3{
   margin:0;
