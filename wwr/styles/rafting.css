@@ -63,15 +63,6 @@ nav, p, section, article {
   margin-left: 10px;
   border: 2px solid var(--secondary-color);
 }
-section h2{
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 12px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  margin-top: 40px;
-}
 section p {
   margin-top: -10px;
   padding: 16px;
@@ -235,7 +226,7 @@ form label {
 
 input[type="text"],
 input[type="email"],
-textarea {
+input[type="tel"] {
   width: 100%;
   padding: 8px;
   border: 1px solid #888;
@@ -321,4 +312,189 @@ button:hover {
   font-size: 0.9rem;
   font-weight: bold;
   color: #333;
+}
+
+
+
+
+
+.offering-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;   
+    gap: 40px;                                             
+    width: 80%;                              
+    margin: 0 auto;      
+}
+
+.offerings {
+  text-align: center;
+}
+
+.offer img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.offer p {
+  font-size: 0.9rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers children horizontally */
+  gap: 10px;
+}
+
+.newsletter{
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter form label,
+.newsletter form input,
+.newsletter form button {
+  width: 100%;           /* optional: make elements uniform width */
+  max-width: 360px;      /* set your desired max width */
+  text-align: center;    /* centers label text */
+}
+
+.cta{
+  max-width:550px;
+  margin:20px auto;
+  padding:22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  background:var(--primary-color);
+  font-family:var(--body-font);
+}
+.cta p{
+  margin:0;
+  line-height:1.45;
+  flex:1;
+  color: var(--secondary-color);
+}
+.cta a{
+  background:var(--secondary-color);
+  color:var(--primary-color);
+  padding:10px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+
+
+
+
+/* === Trips Page Custom Styles === */
+
+/* Hero section with CTA */
+.trips-hero {
+  background: linear-gradient(180deg, rgba(10,45,82,0.08), rgba(10,45,82,0.02));
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 6px;
+}
+.trips-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.trips-hero p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.hero-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero-btn:hover {
+  background: #09314e;
+}
+
+/* Trip cards grid */
+.trip-cards {
+  display: grid;
+  gap: 18px;
+  margin: 30px 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 12px;
+  border-radius: 4px;
+  margin: 40px 16px 20px;
+}
+
+
+.trip-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.trip-card h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin: 0 auto;
+}
+.trip-card p {
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Trips table section */
+.trip-table-section {
+  margin: 40px 0;
+}
+.trip-table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.trip-table-section th,
+.trip-table-section td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+.trip-table-section th {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+.trip-table-section tr:nth-child(even) {
+  background: #f5f5f5;
 }
