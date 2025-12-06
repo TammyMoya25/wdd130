@@ -379,6 +379,7 @@ button:hover {
   background:var(--primary-color);
   font-family:var(--body-font);
   color: white;
+  font-weight: normal;
 }
 .cta h3{
   margin:0;
